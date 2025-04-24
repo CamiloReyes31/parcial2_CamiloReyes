@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azuron</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+     <div class="container">
+        <!-- Inicio Barra de navegacion -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Azuron</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sobre nosotros
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Mision</a></li>
+                      <li><a class="dropdown-item" href="#">Vision</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Politicas</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <!-- Fin Barra de navegacion -->
+     </div>
+
+     <div class="offcanvas offcanvas-start" id="demo_offcanvas">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Misión y Visión</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <h3>
+                Misión
+              </h3>
+              <p>Desarrollar soluciones de software innovadoras, eficientes y personalizadas que impulsen el crecimiento digital de nuestros clientes, combinando tecnología de vanguardia con un compromiso inquebrantable con la calidad, la transparencia y el servicio al cliente.</p>
+              <h3>
+                Visión
+              </h3>
+              <p>Ser reconocidos como líderes en el desarrollo de software a nivel regional/internacional, transformando ideas en soluciones digitales sostenibles que impacten positivamente en empresas, personas y comunidades.</p>      
+          
+        </div>
+      </div>
+
+      <div class="container-fluid mt-3">
+        <h3>Misión y Visión</h3>
+        <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo_offcanvas">
+          ver
+        </button>
+      </div>
+    
+    <!-- Inicio Carrousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/imagen1.jpg" alt="imagen1" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="img/imagen2.jpg" alt="imagen2" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="img/imagen3.png" alt="imagen3" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="img/imagen4.jpg" alt="imagen4" class="d-block" style="width:100%">
+          </div>
+          <div class="carousel-item">
+            <img src="img/imagen5.jpg" alt="imagen5" class="d-block" style="width:100%">
+          </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      
+    <!-- Fin carrousel -->
+
+    <!-- Inicio ventana modal 1 -->
+    <div class="container mt-3">
+        <h3>Ventana modal del pdf</h3>
+        <p>Click on the button to open the modal.</p>
+        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          Ver pdf
+        </button>
+      </div>
+      
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Documentacion - Clase</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              <a href="archivos/NevinsonHerrera_Comercio.pdf" target="_blank" download> Ver archivo</a>
+              <br>
+              <iframe src="archivos/NevinsonHerrera_Comercio.pdf" frameborder="0" width="100%" height="500px"></iframe>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    <!-- Fin ventana modal 1 -->
+
+    <!-- Inicio ventana modal 2 -->
+    <div class="container mt-3">
+        <h3>Ventana modal del video</h3>
+        <p>Click on the button to open the modal.</p>
+        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">
+          Ver video de desarrollo de software
+        </button>
+      </div>
+      
+      <!-- The Modal -->
+      <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Bienvenidos a la UPC</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              <video src="video/video1.mp4"controls style="width: 100%;"></video>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    <!-- Fin ventana modal 2 -->
+</body>
+</html>
